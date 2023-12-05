@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --pri: rgb(0, 255, 85);
+  --sec: blue;
+  --texto: black;
+  --fundo: white;
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 40px;
+  position: absolute;
+  width: 100%;
+  background-color: var(--fundo);
+  box-shadow: 0 0.1rem 0.5rem rgb(227, 232, 236)
+}
+
+.logo {
+  font-size: 1.7rem;
+  color: var(--texto);
+  font-weight: 600;
+}
+
+.spn {
+  color: var(--pri);
+}
+
+.ul-header {
+  display: flex;
+  align-items: baseline;
+  gap: 5rem;
+}
+
+.navigation ul li a {
+
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--texto);
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: var(--pri);
+}
+
+/* Todo conteúdo do meu Header */
+
+#corpo-calc {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin: 0 40%;
+  padding-top: 10%;
+}
+
+.nome {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.altura {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.peso {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.final {
+  font-family: 'Inter', sans-serif;
+  padding-top: 2rem;
+  transition: all 0.5s;
+  animation-duration: 1200ms;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.botao {
+  background-color: var(--pri);
+  color: var(--fundo);
+  border: none;
+  border-radius: 20px;
+  padding: 0px 2rem;
+  margin: 3rem 0;
+}
+
+.botao:hover {
+  opacity: 0.7;
+}
+
+.area-final {
+  text-align: center;
+}
+
+input {
+  border-radius: 30px;
+  border: solid 2px black;
+}
+
+@media screen and ( max-width: 800px ) {
+  #corpo-calc{
+    margin: 0 30%;
+    padding-top: 25%;
+  }
+}
+
+@media screen and ( max-width: 750px ) {
+  #corpo-calc{
+    margin: 0 20%;
+    padding-top: 25%;
+  }
+}
+
+
+@media screen and ( max-width: 426px ) {
+  #corpo-calc{
+    margin: 0 15%;
+    padding-top: 25%;
+  }
+
+  .navigation ul li a{
+    display: none;
+  }
+
+}
